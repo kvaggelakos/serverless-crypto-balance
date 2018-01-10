@@ -1,0 +1,18 @@
+{
+  "name": "serverless-crypto-balance",
+  "version": "1.0.0",
+  "description": "Serverless function to get balances from your crypto wallets",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "sls offline start"
+  },
+  "author": "Kostas Vaggelakos <kostas@vaggelakos.com>",
+  "license": "ISC",
+  "dependencies": {
+    "crypto-balances": "^2.1.3"
+  },
+  "devDependencies": {
+    "serverless-offline": "^3.16.0"
+  }
+}

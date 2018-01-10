@@ -1,0 +1,22 @@
+
+service: serverless-crypto-balance
+
+
+plugins:
+  - serverless-offline
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+  timeout: 10
+  memorySize: 512
+  profile: kostas
+
+
+functions:
+  balance:
+    handler: handler.balance
+    events:
+      - http:
+          path: /api/v1/balance/{id}
+          method: get
