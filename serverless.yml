@@ -1,6 +1,4 @@
-
 service: serverless-crypto-balance
-
 
 plugins:
   - serverless-offline
@@ -10,13 +8,21 @@ provider:
   runtime: nodejs6.10
   timeout: 10
   memorySize: 512
+  environment:
+    USERNAME: test
+    PASSWORD: test
   profile: kostas
 
-
 functions:
+  authorizer:
+    handler: authorizer.auth
+
   balance:
     handler: handler.balance
     events:
       - http:
           path: /api/v1/balance/{id}
           method: get
+          authorizer:
+            name: authorizer
+            type: request
