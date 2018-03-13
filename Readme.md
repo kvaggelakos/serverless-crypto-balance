@@ -3,6 +3,7 @@
 A serverless backend to query crypto wallet balances
 
 [![Google spreadsheets with crypto](./pics/google-sheets-crypto.png)](./architecture.png)
+[![Demo](./pics/demo3.png)](./pics/demo3.png)
 
 ## Details
 
