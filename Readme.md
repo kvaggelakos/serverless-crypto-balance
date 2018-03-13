@@ -42,6 +42,11 @@ To clean up run:
 sls remove
 ```
 
+## Using from google spreadsheet
+
+In order to use this from your google spreadsheet, check out the script [here](./spreadsheet-code/walletbalance.gs)
+
+
 ## Screenshots
 
 [![Screenshot 1](./pics/demo1.png)](./architecture.png)
